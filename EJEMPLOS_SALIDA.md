@@ -131,5 +131,3 @@ Perro: El perro dice: ¡Guau guau!
 3. **Ejercicio 3:** Ilustra la herencia simple y el uso de métodos heredados
 4. **Ejercicio 4:** Ejemplifica el polimorfismo con referencias de clase base
 5. **Ejercicio 5:** Presenta herencia multinivel con tres niveles de jerarquía
-
-Cada ejercicio espera que presiones una tecla al final para cerrar la ventana de consola.
