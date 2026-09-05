@@ -1,0 +1,96 @@
+========================================
+PASOS PARA SUBIR AL REPOSITORIO DE GITHUB
+========================================
+
+REPOSITORIO: https://github.com/LM22040/Gu-a-Pr-cticaDRS-LM22040.git
+
+Ejecuta estos comandos UNO POR UNO en la terminal (PowerShell o CMD) 
+desde la carpeta del proyecto:
+
+cd "c:\Users\Alejandro\Documents\CICLO II-2026\Desarrollo y reutilizacion de software\Guia parctica 1 LM22040"
+
+========================================
+PASO 1: Verificar que Git está inicializado
+========================================
+git status
+
+(Ya debería estar inicializado. Si dice "not a git repository", ejecuta: git init)
+
+========================================
+PASO 2: Agregar todos los archivos
+========================================
+git add .
+
+========================================
+PASO 3: Hacer el primer commit
+========================================
+git commit -m "Initial commit: Implementación completa de ejercicios de POO - Abstracción, Encapsulación, Herencia y Polimorfismo"
+
+========================================
+PASO 4: Conectar con el repositorio remoto
+========================================
+git remote add origin https://github.com/LM22040/Gu-a-Pr-cticaDRS-LM22040.git
+
+========================================
+PASO 5: Verificar la conexión
+========================================
+git remote -v
+
+(Deberías ver tu repositorio listado)
+
+========================================
+PASO 6: Cambiar a la rama main
+========================================
+git branch -M main
+
+========================================
+PASO 7: Subir todo al repositorio
+========================================
+git push -u origin main
+
+(Te pedirá autenticación de GitHub. Usa tu usuario y token personal)
+
+========================================
+ARCHIVOS QUE SE SUBIRÁN:
+========================================
+✅ .gitignore
+✅ README.md
+✅ INSTRUCCIONES_GIT.md
+✅ EJEMPLOS_SALIDA.md
+✅ Ejercicio1_Abstraccion/CuentaBancaria.cs
+✅ Ejercicio2_Encapsulacion/Empleado.cs
+✅ Ejercicio3_HerenciaSimple/Vehiculo.cs
+✅ Ejercicio4_Polimorfismo/Polimorfismo.cs
+✅ Ejercicio5_HerenciaMultinivel/HerenciaMultinivel.cs
+
+❌ NO se subirán las carpetas compiladas (Ejercicio1/, Ejercicio2/, etc.)
+   gracias al archivo .gitignore
+
+========================================
+VERIFICACIÓN FINAL:
+========================================
+Después de hacer push, ve a:
+https://github.com/LM22040/Gu-a-Pr-cticaDRS-LM22040
+
+Y verifica que todos los archivos están allí.
+
+========================================
+SI NECESITAS HACER CAMBIOS DESPUÉS:
+========================================
+1. Haz tus cambios en los archivos
+2. git add .
+3. git commit -m "Descripción de los cambios"
+4. git push
+
+========================================
+NOTA IMPORTANTE SOBRE AUTENTICACIÓN:
+========================================
+Si Git te pide usuario y contraseña, necesitarás un Personal Access Token.
+Para crearlo:
+1. Ve a GitHub.com → Settings → Developer settings → Personal access tokens → Tokens (classic)
+2. Generate new token (classic)
+3. Marca: repo (todos los permisos)
+4. Copia el token generado
+5. Úsalo como contraseña cuando Git te lo pida
+
+========================================
